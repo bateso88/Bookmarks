@@ -7,6 +7,11 @@ So I can see what bookmarks I have
 I want to see a list of bookmarks
 ```
 
+```
+As a user
+So I can store bookmarks for later
+I want to be able to add bookmarks to the list 
+```
 Classes:
 Bookmark
 BookmarkManager (has list of Bookmarks).

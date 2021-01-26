@@ -2,8 +2,6 @@ require 'pg'
 
 class Bookmark
 
-  attr_reader :title, :url
-
   def self.all
     if ENV['ENVIRONMENT'] == 'test'
       connection = PG.connect(dbname: "bookmark_manager_test")
@@ -14,9 +12,8 @@ class Bookmark
     result.map {|bookmark| bookmark['url']}
   end
 
-  def initialize(title, url)
-    @title = title
-    @url = url
+  def self.create(url)
+    
   end
 
 end
