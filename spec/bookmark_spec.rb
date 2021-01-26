@@ -19,8 +19,8 @@ describe Bookmark do
   end
 
   describe '.create' do
-    xit 'adds a new bookmart to the database' do
-      Bookmark.create('http://www.twitter.com')
+    it 'adds a new bookmart to the database' do
+      Bookmark.create(url: 'http://www.twitter.com')
       bookmarks = Bookmark.all
       expect(bookmarks).to include('http://www.twitter.com')
     end
