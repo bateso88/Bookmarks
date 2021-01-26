@@ -19,10 +19,11 @@ show list -> method of the BookmarkManager
 
 ### To set up the database
 
-Connect to `psql` and create the `bookmark_manager` database:
+Connect to `psql` and create the `bookmark_manager` database & the `bookmark_manager_test:` database;
 
 ```
 CREATE DATABASE bookmark_manager;
+CREATE DATABASE bookmark_manager_test;
 ```
 
 To set up the appropriate tables, connect to each database in `psql` and run the SQL scripts in the `db/migrations` folder in the given order.
