@@ -1,20 +1,20 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/glykeriastravodimou/MakersAcademy/Afternoon_challenges/bookmarks/spec/bookmark_spec.rb": {
+      "/Users/joespraggon/Coding_Projects/Makers_Fulltime/bookmarks/spec/bookmark_spec.rb": {
         "lines": [
           1,
           null,
           1,
           null,
-          3,
+          2,
           null,
           1,
           1,
           null,
           null,
-          1,
-          1,
+          null,
+          null,
           null,
           null,
           1,
@@ -24,7 +24,7 @@
           null
         ]
       },
-      "/Users/glykeriastravodimou/MakersAcademy/Afternoon_challenges/bookmarks/spec/feature/bookmarks_page_spec.rb": {
+      "/Users/joespraggon/Coding_Projects/Makers_Fulltime/bookmarks/spec/feature/bookmarks_page_spec.rb": {
         "lines": [
           1,
           1,
@@ -35,7 +35,7 @@
           null
         ]
       },
-      "/Users/glykeriastravodimou/MakersAcademy/Afternoon_challenges/bookmarks/spec/feature/simple_index_spec.rb": {
+      "/Users/joespraggon/Coding_Projects/Makers_Fulltime/bookmarks/spec/feature/simple_index_spec.rb": {
         "lines": [
           1,
           1,
@@ -46,6 +46,6 @@
         ]
       }
     },
-    "timestamp": 1611592145
+    "timestamp": 1611672746
   }
 }
