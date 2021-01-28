@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/katrinaharradine/Documents/Coding/Makers/projects/week_4/bookmark-ollie/bookmarks/spec/bookmark_spec.rb": {
+      "/Users/oliverbates/Projects/Makers/week4/bookmark_day_4/bookmarks/spec/bookmark_spec.rb": {
         "lines": [
           1,
           1,
@@ -45,6 +45,31 @@
           null,
           1,
           null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
           1,
           null,
           null,
@@ -52,7 +77,7 @@
           null
         ]
       },
-      "/Users/katrinaharradine/Documents/Coding/Makers/projects/week_4/bookmark-ollie/bookmarks/spec/database_helpers.rb": {
+      "/Users/oliverbates/Projects/Makers/week4/bookmark_day_4/bookmarks/spec/database_helpers.rb": {
         "lines": [
           1,
           null,
@@ -63,7 +88,7 @@
           null
         ]
       },
-      "/Users/katrinaharradine/Documents/Coding/Makers/projects/week_4/bookmark-ollie/bookmarks/spec/feature/adding_bookmarks_spec.rb": {
+      "/Users/oliverbates/Projects/Makers/week4/bookmark_day_4/bookmarks/spec/feature/adding_bookmarks_spec.rb": {
         "lines": [
           1,
           1,
@@ -82,7 +107,7 @@
           null
         ]
       },
-      "/Users/katrinaharradine/Documents/Coding/Makers/projects/week_4/bookmark-ollie/bookmarks/spec/feature/bookmarks_page_spec.rb": {
+      "/Users/oliverbates/Projects/Makers/week4/bookmark_day_4/bookmarks/spec/feature/bookmarks_page_spec.rb": {
         "lines": [
           1,
           null,
@@ -105,7 +130,7 @@
           null
         ]
       },
-      "/Users/katrinaharradine/Documents/Coding/Makers/projects/week_4/bookmark-ollie/bookmarks/spec/feature/deleting_bookmarks_spec.rb": {
+      "/Users/oliverbates/Projects/Makers/week4/bookmark_day_4/bookmarks/spec/feature/deleting_bookmarks_spec.rb": {
         "lines": [
           1,
           1,
@@ -123,17 +148,37 @@
           null
         ]
       },
-      "/Users/katrinaharradine/Documents/Coding/Makers/projects/week_4/bookmark-ollie/bookmarks/spec/feature/simple_index_spec.rb": {
+      "/Users/oliverbates/Projects/Makers/week4/bookmark_day_4/bookmarks/spec/feature/simple_index_spec.rb": {
         "lines": [
           1,
           1,
           1,
           1,
+          null,
+          null
+        ]
+      },
+      "/Users/oliverbates/Projects/Makers/week4/bookmark_day_4/bookmarks/spec/feature/updating_bookmark_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
           null,
           null
         ]
       }
     },
-    "timestamp": 1611845284
+    "timestamp": 1611849575
   }
 }
