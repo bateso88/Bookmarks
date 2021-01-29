@@ -1,8 +1,9 @@
+# frozen_string_literal: true
+
 require 'pg'
 require_relative 'database_connection'
 
 class Bookmark
-
   attr_reader :id, :url, :title
 
   def initialize(id:, title:, url:)
@@ -12,8 +13,7 @@ class Bookmark
   end
 
   def self.all
-    
-    result = DatabaseConnection.query("SELECT * FROM bookmarks;")
+    result = DatabaseConnection.query('SELECT * FROM bookmarks;')
     result.map do |bookmark|
       Bookmark.new(id: bookmark['id'], title: bookmark['title'], url: bookmark['url'])
     end
@@ -26,7 +26,7 @@ class Bookmark
 
   def self.delete(id:)
     DatabaseConnection.query("DELETE FROM bookmarks WHERE id = #{id}")
-  end 
+  end
 
   def self.update(id:, url:, title:)
     result = DatabaseConnection.query("UPDATE bookmarks SET url = '#{url}', title ='#{title}' WHERE id = #{id} RETURNING id, url, title;")
@@ -37,5 +37,4 @@ class Bookmark
     result = DatabaseConnection.query("SELECT * FROM bookmarks WHERE id = #{id};")
     Bookmark.new(id: result[0]['id'], title: result[0]['title'], url: result[0]['url'])
   end
-
 end

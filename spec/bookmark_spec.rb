@@ -1,16 +1,16 @@
-require "bookmark"
+# frozen_string_literal: true
+
+require 'bookmark'
 require 'database_helpers'
 
-
 describe Bookmark do
-
   describe '.all' do
     it 'returns a list of bookmarks' do
       connection = PG.connect(dbname: 'bookmark_manager_test')
 
-      bookmark = Bookmark.create(url: "http://www.makersacademy.com", title: "Makers Academy")
-      Bookmark.create(url: "http://www.destroyallsoftware.com", title: "Destroy All Software")
-      Bookmark.create(url: "http://www.google.com", title: "Google")
+      bookmark = Bookmark.create(url: 'http://www.makersacademy.com', title: 'Makers Academy')
+      Bookmark.create(url: 'http://www.destroyallsoftware.com', title: 'Destroy All Software')
+      Bookmark.create(url: 'http://www.google.com', title: 'Google')
 
       bookmarks = Bookmark.all
 
@@ -18,7 +18,7 @@ describe Bookmark do
       expect(bookmarks.first).to be_a Bookmark
       expect(bookmarks.first.id).to eq bookmark.id
       expect(bookmarks.first.title).to eq 'Makers Academy'
-      expect(bookmarks.first.url).to eq "http://www.makersacademy.com"
+      expect(bookmarks.first.url).to eq 'http://www.makersacademy.com'
     end
   end
 
@@ -44,10 +44,11 @@ describe Bookmark do
     end
   end
 
-  describe '.update' do 
+  describe '.update' do
     it 'updates a bookmark when selected' do
       bookmark = Bookmark.create(title: 'Makers Academy', url: 'http://www.makersacademy.com')
-      updated_bookmark = Bookmark.update(id: bookmark.id, url: 'http://www.snakersacademy.com', title: 'Snakers Academy')
+      updated_bookmark = Bookmark.update(id: bookmark.id, url: 'http://www.snakersacademy.com',
+                                         title: 'Snakers Academy')
 
       expect(updated_bookmark).to be_a Bookmark
       expect(updated_bookmark.id).to eq bookmark.id
@@ -56,8 +57,8 @@ describe Bookmark do
     end
   end
 
-  describe '.find' do 
-    it 'returns the requested bookmark object' do 
+  describe '.find' do
+    it 'returns the requested bookmark object' do
       bookmark = Bookmark.create(title: 'Makers Academy', url: 'http://www.makersacademy.com')
 
       result = Bookmark.find(id: bookmark.id)
@@ -68,5 +69,4 @@ describe Bookmark do
       expect(result.url).to eq 'http://www.makersacademy.com'
     end
   end
-
 end

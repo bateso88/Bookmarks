@@ -1,3 +1,7 @@
+<form action='/add_bookmark' method='get'>
+  <input type='submit' value='Add bookmark'>
+</form>
+
 <ul>
   <% @bookmarks.each do |bookmark| %>
   <li class="bookmark" id="bookmark"-<%= bookmark.id%>">

@@ -1,16 +1,16 @@
 # frozen_string_literal: true
 
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
+git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 
 # gem "rails"
-gem 'sinatra'
-gem 'rspec'
 gem 'capybara'
+gem 'pg'
+gem 'rack'
+gem 'rspec'
 gem 'rubocop'
+gem 'shotgun'
 gem 'simplecov'
 gem 'simplecov-console'
-gem 'pg'
-gem 'shotgun'
-gem 'rack'
+gem 'sinatra'

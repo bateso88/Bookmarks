@@ -1,9 +1,10 @@
+# frozen_string_literal: true
+
 require 'sinatra'
-require_relative "lib/bookmark"
+require_relative 'lib/bookmark'
 require_relative 'database_connection_setup'
 
 class BookmarkManager < Sinatra::Base
-
   enable :method_override
 
   get '/' do
@@ -14,14 +15,14 @@ class BookmarkManager < Sinatra::Base
     erb :add_bookmark
   end
 
-  get "/bookmarks" do
+  get '/bookmarks' do
     @bookmarks = Bookmark.all
-    erb :bookmarks
+    erb :'bookmarks/index'
   end
 
   post '/bookmarks' do
     Bookmark.create(title: params[:title], url: params[:url])
-    redirect ('/bookmarks')
+    redirect('/bookmarks')
   end
 
   delete '/bookmarks/:id' do
@@ -39,6 +40,5 @@ class BookmarkManager < Sinatra::Base
     redirect('/bookmarks')
   end
 
-
-  run! if app_file == $0
+  run! if app_file == $PROGRAM_NAME
 end
