@@ -4,6 +4,7 @@ require 'sinatra'
 require_relative 'lib/bookmark'
 require_relative 'database_connection_setup'
 
+# Bookmark manager class
 class BookmarkManager < Sinatra::Base
   enable :method_override
 
@@ -11,8 +12,8 @@ class BookmarkManager < Sinatra::Base
     erb :index
   end
 
-  get '/add_bookmark' do
-    erb :add_bookmark
+  get '/bookmarks/add' do
+    erb :'bookmarks/add'
   end
 
   get '/bookmarks' do
@@ -32,7 +33,7 @@ class BookmarkManager < Sinatra::Base
 
   get '/bookmarks/:id/update' do
     @bookmark = Bookmark.find(id: params[:id])
-    erb(:update)
+    erb :'bookmarks/update'
   end
 
   patch '/bookmarks/:id' do

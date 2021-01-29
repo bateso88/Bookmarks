@@ -8,7 +8,7 @@ feature 'Adding bookmarks' do
   end
 
   scenario 'the user adds a bookmark via a form' do
-    visit('/add_bookmark')
+    visit('/bookmarks/add')
     fill_in('title', with: 'Twitter')
     fill_in('url', with: 'http://www.twitter.com')
     click_button('Submit')

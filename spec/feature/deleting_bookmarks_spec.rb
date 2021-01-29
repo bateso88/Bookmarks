@@ -2,7 +2,7 @@
 
 feature 'Deleting bookmarks' do
   scenario 'the user adds a bookmark and deletes it' do
-    visit('/add_bookmark')
+    visit('/bookmarks/add')
     fill_in('title', with: 'Twitter')
     fill_in('url', with: 'http://www.twitter.com')
     click_button('Submit')

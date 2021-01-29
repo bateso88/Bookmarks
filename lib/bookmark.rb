@@ -3,6 +3,7 @@
 require 'pg'
 require_relative 'database_connection'
 
+# Bpookmark class
 class Bookmark
   attr_reader :id, :url, :title
 
