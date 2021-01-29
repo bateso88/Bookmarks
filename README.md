@@ -13,8 +13,9 @@ So I can store bookmarks for later
 I want to be able to add bookmarks to the list 
 ```
 Classes:
-Bookmark
-BookmarkManager (has list of Bookmarks).
+- Bookmark 
+- DatabaseConnection
+- BookmarkManager (app).
 
 show list -> method of the BookmarkManager
 
